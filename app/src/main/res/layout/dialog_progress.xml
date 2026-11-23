@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:background="@drawable/bg_overlay" android:gravity="center_horizontal" android:orientation="vertical" android:padding="30dp">
+        <ImageView android:id="@+id/spin" android:layout_width="72dp" android:layout_height="72dp" android:contentDescription="Working" android:src="@drawable/ic_logo" />
+        <TextView android:id="@+id/s0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Generating RSA key pair" android:textSize="15sp" />
+        <TextView android:id="@+id/s1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Signing certificate" android:textSize="15sp" />
+        <TextView android:id="@+id/s2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Packing PKCS12" android:textSize="15sp" />
+        <TextView android:id="@+id/s3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Building JKS and verifying" android:textSize="15sp" />
+    </LinearLayout>
+</FrameLayout>

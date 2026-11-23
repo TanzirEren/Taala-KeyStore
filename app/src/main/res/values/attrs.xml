@@ -1,0 +1,20 @@
+<resources>
+    <attr name="cBg" format="color" />
+    <attr name="cInk" format="color" />
+    <attr name="cMute" format="color" />
+    <attr name="cAc" format="color" />
+    <attr name="cAcD" format="color" />
+    <attr name="cOn" format="color" />
+    <attr name="cBad" format="color" />
+    <attr name="cGlass" format="color" />
+    <attr name="cEdge" format="color" />
+    <attr name="cLine" format="color" />
+    <attr name="cField" format="color" />
+    <attr name="cCode" format="color" />
+    <attr name="cNote" format="color" />
+    <attr name="cHero" format="color" />
+    <attr name="cB1" format="color" />
+    <attr name="cB2" format="color" />
+    <attr name="cB3" format="color" />
+    <attr name="cB4" format="color" />
+</resources>

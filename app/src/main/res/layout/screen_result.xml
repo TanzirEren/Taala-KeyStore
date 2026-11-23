@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:paddingBottom="120dp" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="22dp">
+
+    <TextView android:id="@+id/r_title" style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tag="disp" android:text="Keystore ready." />
+    <TextView android:id="@+id/r_sub" style="@style/Lead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+    <TextView android:id="@+id/r_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:layout_marginTop="8dp" android:background="@drawable/bg_badge" android:paddingBottom="5dp" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingTop="5dp" android:textColor="?attr/cOn" android:textSize="13sp" />
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:id="@+id/tab_sec" style="@style/Tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tag="bold" android:text="Secrets" />
+                <TextView android:id="@+id/tab_fp" style="@style/Tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:tag="bold" android:text="Fingerprints" />
+                <TextView android:id="@+id/tab_fl" style="@style/Tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:tag="bold" android:text="Files" />
+                <TextView android:id="@+id/tab_wf" style="@style/Tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:tag="bold" android:text="Workflow" />
+                <TextView android:id="@+id/tab_gr" style="@style/Tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:tag="bold" android:text="Gradle" />
+                <TextView android:id="@+id/tab_nt" style="@style/Tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:tag="bold" android:text="Notes" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:id="@+id/p_sec" style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+    <LinearLayout android:id="@+id/p_fp" style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+    <LinearLayout android:id="@+id/p_fl" style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+    <LinearLayout android:id="@+id/p_wf" style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+    <LinearLayout android:id="@+id/p_gr" style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+    <LinearLayout android:id="@+id/p_nt" style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+
+    <com.taala.app.FlowLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/btn_zip" style="@style/BtnPri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download all (zip)" />
+        <TextView android:id="@+id/btn_share" style="@style/Btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share zip" />
+        <TextView android:id="@+id/btn_back" style="@style/Btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All projects" />
+    </com.taala.app.FlowLayout>
+</LinearLayout>

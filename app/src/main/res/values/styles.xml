@@ -1,0 +1,170 @@
+<resources>
+    <!-- Olive Green #4D694E and Beige Cream #FFF3D5, frosted glass surfaces -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">?attr/cBg</item>
+        <item name="android:statusBarColor">?attr/cBg</item>
+        <item name="android:navigationBarColor">?attr/cBg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorAccent">?attr/cAc</item>
+        <item name="android:colorControlActivated">?attr/cAc</item>
+        <item name="android:colorControlNormal">?attr/cMute</item>
+        <item name="android:textColorHighlight">#554D694E</item>
+        <item name="cBg">#FFF3D5</item>
+        <item name="cInk">#1F2E20</item>
+        <item name="cMute">#55694F</item>
+        <item name="cAc">#4D694E</item>
+        <item name="cAcD">#3A523B</item>
+        <item name="cOn">#FFF3D5</item>
+        <item name="cBad">#A8503F</item>
+        <item name="cGlass">#6BFFFFFF</item>
+        <item name="cEdge">#B8FFFFFF</item>
+        <item name="cLine">#384D694E</item>
+        <item name="cField">#8CFFFFFF</item>
+        <item name="cCode">#1F4D694E</item>
+        <item name="cNote">#1F4D694E</item>
+        <item name="cHero">#294D694E</item>
+        <item name="cB1">#804D694E</item>
+        <item name="cB2">#99AAC48C</item>
+        <item name="cB3">#614D694E</item>
+        <item name="cB4">#8CE8BE6E</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">?attr/cBg</item>
+        <item name="android:statusBarColor">?attr/cBg</item>
+        <item name="android:navigationBarColor">?attr/cBg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorAccent">?attr/cAc</item>
+        <item name="android:colorControlActivated">?attr/cAc</item>
+        <item name="android:colorControlNormal">?attr/cMute</item>
+        <item name="android:textColorHighlight">#55A9C8A3</item>
+        <item name="cBg">#121A13</item>
+        <item name="cInk">#FFF3D5</item>
+        <item name="cMute">#B7C4AE</item>
+        <item name="cAc">#A9C8A3</item>
+        <item name="cAcD">#C7E0C1</item>
+        <item name="cOn">#14211A</item>
+        <item name="cBad">#E8998A</item>
+        <item name="cGlass">#73283A2A</item>
+        <item name="cEdge">#26FFF3D5</item>
+        <item name="cLine">#24FFF3D5</item>
+        <item name="cField">#8C142016</item>
+        <item name="cCode">#12FFF3D5</item>
+        <item name="cNote">#12FFF3D5</item>
+        <item name="cHero">#24A9C8A3</item>
+        <item name="cB1">#994D694E</item>
+        <item name="cB2">#4D789664</item>
+        <item name="cB3">#8C3C5A46</item>
+        <item name="cB4">#38BE9646</item>
+    </style>
+
+    <style name="ProgressDialog" parent="android:Theme.Material.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="H1">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">?attr/cInk</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Lead">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/cMute</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    <style name="Lbl">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/cMute</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="CardTitle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?attr/cInk</item>
+        <item name="android:tag">bold</item>
+    </style>
+    <style name="Fld">
+        <item name="android:background">@drawable/bg_field</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/cInk</item>
+        <item name="android:textColorHint">?attr/cMute</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:importantForAutofill">no</item>
+    </style>
+    <style name="Btn">
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/cInk</item>
+        <item name="android:tag">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="BtnPri" parent="Btn">
+        <item name="android:background">@drawable/bg_btn_pri</item>
+        <item name="android:textColor">?attr/cOn</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+    </style>
+    <style name="BtnSm" parent="Btn">
+        <item name="android:minHeight">38dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Tab">
+        <item name="android:background">@drawable/bg_tab</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/cMute</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="Cp">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/cAcD</item>
+        <item name="android:tag">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="Note">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/cMute</item>
+        <item name="android:background">@drawable/bg_note</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="Card">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_glass</item>
+        <item name="android:padding">20dp</item>
+    </style>
+    <style name="Chip">
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/cMute</item>
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:paddingRight">9dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+</resources>

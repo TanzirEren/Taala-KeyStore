@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:paddingBottom="120dp" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="22dp">
+
+    <TextView android:id="@+id/btn_cancel" style="@style/Btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:text="← Projects" />
+    <TextView style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tag="disp" android:text="New keystore." />
+    <TextView style="@style/Lead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26dp" android:layout_marginTop="10dp" android:text="Everything is generated on this device and saved only in its local database. No server ever sees your keys." />
+    <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+        <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Project" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Project name *" />
+            <EditText android:id="@+id/f_project" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="My Project" android:inputType="textCapWords" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App name *" />
+            <EditText android:id="@+id/f_app" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="My App" android:inputType="textCapWords" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Package name" />
+            <EditText android:id="@+id/f_pkg" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="com.example.app" android:inputType="textNoSuggestions" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Key alias *" />
+            <EditText android:id="@+id/f_alias" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="key0" android:inputType="textNoSuggestions" />
+    </LinearLayout>
+    <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+        <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Passwords and validity" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keystore password (min 6)" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <EditText android:id="@+id/f_sp" style="@style/Fld" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="textVisiblePassword|textNoSuggestions" />
+                <TextView android:id="@+id/btn_gen" style="@style/Btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="Generate" />
+            </LinearLayout>
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Key password (min 6)" />
+            <EditText android:id="@+id/f_kp" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="" android:inputType="textVisiblePassword|textNoSuggestions" />
+            <com.taala.app.MeterView android:id="@+id/meter" android:layout_width="match_parent" android:layout_height="5dp" android:layout_marginTop="14dp" />
+            <CheckBox android:id="@+id/cb_same" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:checked="true" android:text="Use the same password for key and keystore" android:textColor="?attr/cMute" android:textSize="14sp" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Validity (years)" />
+            <EditText android:id="@+id/f_years" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="25" android:inputType="number" android:text="25" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Key size" />
+            <TextView android:id="@+id/btn_bits" style="@style/Btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RSA 2048 ▾" />
+    </LinearLayout>
+    <LinearLayout style="@style/Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+        <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Certificate identity" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Full name (CN)" />
+            <EditText android:id="@+id/f_cn" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="" android:inputType="textCapWords" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Organizational unit (OU)" />
+            <EditText android:id="@+id/f_ou" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="" android:inputType="textCapWords" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Organization (O)" />
+            <EditText android:id="@+id/f_o" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="" android:inputType="textCapWords" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="City (L)" />
+            <EditText android:id="@+id/f_l" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="" android:inputType="textCapWords" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="State (ST)" />
+            <EditText android:id="@+id/f_st" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="" android:inputType="textCapWords" />
+            <TextView style="@style/Lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Country code (C)" />
+            <EditText android:id="@+id/f_c" style="@style/Fld" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="BD" android:inputType="textCapCharacters|textNoSuggestions" android:maxLength="2" />
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/cb_rem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:checked="true" android:text="Remember identity details on this device" android:textColor="?attr/cMute" android:textSize="14sp" />
+    <TextView android:id="@+id/btn_create" style="@style/BtnPri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Generate keystore" />
+    <TextView android:id="@+id/tv_err" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textColor="?attr/cBad" android:textSize="14sp" android:visibility="gone" />
+</LinearLayout>

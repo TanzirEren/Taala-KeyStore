@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="12dp" android:paddingTop="12dp">
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/fname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tag="bold" android:textColor="?attr/cInk" android:textSize="15sp" />
+        <TextView android:id="@+id/fdesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="?attr/cMute" android:textSize="13sp" />
+    </LinearLayout>
+    <TextView android:id="@+id/fdl" style="@style/BtnSm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Download" />
+</LinearLayout>

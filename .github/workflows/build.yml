@@ -1,4 +1,4 @@
-name: Build Taala APK
+name: Build Taala APK Sign8ng
 
 on:
   workflow_dispatch:
